@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginConstrains">
+
+    <TextView
+        android:text="Indonesia (Indonesia)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtbahasa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:src="@drawable/ig"
+        android:id="@+id/imgig"
+        android:layout_marginTop="80dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtbahasa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+   <EditText
+       android:hint="Mobile number or email"
+       android:background="@drawable/layoutground"
+       android:padding="15dp"
+       android:textSize="15dp"
+       android:layout_marginTop="90dp"
+       android:id="@+id/edmamapengguna"
+       app:layout_constraintTop_toBottomOf="@+id/imgig"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintWidth_percent="0.85"
+       android:layout_width="0dp"
+       android:layout_height="48dp"/>
+
+    <EditText
+        android:hint="Kata sandi"
+        android:background="@drawable/layoutground"
+        android:layout_marginTop="15sp"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:id="@+id/edkatasandi"
+        app:layout_constraintTop_toBottomOf="@+id/edmamapengguna"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.85"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:text="Log in"
+        android:layout_marginTop="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/edkatasandi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.85"
+        android:id="@+id/btnlojin"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#0095F6"/>
+
+    <TextView
+        android:text="Forgot password?"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnlojin"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtlupa"/>
+
+    <Button
+        android:id="@+id/btnBuat"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Create New Account"
+        android:textColor="@android:color/holo_blue_dark"
+        app:strokeWidth="1dp"
+        app:strokeColor="#0095F6"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toBottomOf="@id/txtlupa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.85"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBuat"
+        app:srcCompat="@drawable/meta" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

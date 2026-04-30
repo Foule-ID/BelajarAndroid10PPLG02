@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersegiPanjangConstraint">
+
+  <TextView
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_margin="20dp"
+      android:id="@+id/txtPanjang"
+      android:text="Panjang Lebar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="20sp"/>
+
+    <EditText
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edLebar"
+        app:layout_constraintTop_toBottomOf="@+id/txtPanjang"
+        android:layout_marginTop="20sp"
+        android:hint="Panjang"
+        android:id="@+id/edPanjang"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPanjang"
+        app:layout_constraintStart_toEndOf="@+id/edPanjang"
+        android:layout_marginTop="20sp"
+        android:hint="Lebar"
+        android:id="@+id/edLebar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_margin="20sp"
+        android:text="Luas"
+        app:layout_constraintTop_toBottomOf="@+id/edPanjang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLuas"/>
+
+    <Button
+        android:layout_margin="20sp"
+        android:text="Kell"
+        app:layout_constraintTop_toBottomOf="@+id/btnLuas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Hasil"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

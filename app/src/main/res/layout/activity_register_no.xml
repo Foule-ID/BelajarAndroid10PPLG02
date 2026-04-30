@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterNo">
+
+    <TextView
+        android:text="Berapa Nomer Ponsel Anda?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtt"/>
+
+    <TextView
+        android:text="Masukan nomor ponsel yang bisa di hubungi. Tidak"
+        android:id="@+id/txtmasuk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="ada yang akan melihat informasi ini di profil Anda"
+        android:id="@+id/txtanda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtmasuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:hint="Nomor Ponsel"
+        android:background="@drawable/layoutground"
+        android:layout_marginTop="40dp"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:id="@+id/edNomorPonsel"
+        app:layout_constraintTop_toBottomOf="@+id/txtmasuk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.85"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:text="Anda mungkin menerima notifikasi WhatsApp dan SMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edNomorPonsel"
+        android:layout_marginTop="5sp"
+        android:id="@+id/txtnotif1"
+        android:textColor="#DDDDDD"/>
+
+
+    <TextView
+        android:text="Dari kami untuk tujuan keamanan dan login."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtnotif1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/txtnotif2"
+        android:textColor="#DDDDDD"/>
+
+    <Button
+        android:text="Berikutnya"
+        android:layout_marginTop="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/txtnotif2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.85"
+        android:id="@+id/btnBerikut"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#0095F6"/>
+
+    <Button
+        android:id="@+id/btnBuat"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Daftar dengan email"
+        android:textColor="#000000"
+        app:strokeWidth="1dp"
+        app:strokeColor="#DDDDDD"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginTop="2sp"
+        app:layout_constraintTop_toBottomOf="@id/btnBerikut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.85"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

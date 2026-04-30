@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aritmatika">
+
+    <TextView
+        android:id="@+id/tvUsernameLogin"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Welcome : User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edAngka1"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:hint="angka 1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edAngka2"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:hint="angka 2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnTambah"
+            android:text=" + "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#F80202"/>
+        <Button
+            android:id="@+id/btnKurang"
+            android:text=" - "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#F80202"/>
+        <Button
+            android:id="@+id/btnKali"
+            android:text="  x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#F80202"/>
+        <Button
+            android:id="@+id/btnBagi"
+            android:text=" / "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#F80202"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtHasil"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="Bersihkan"
+        android:id="@+id/btnBersihkan"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F80202"/>
+
+</LinearLayout>
