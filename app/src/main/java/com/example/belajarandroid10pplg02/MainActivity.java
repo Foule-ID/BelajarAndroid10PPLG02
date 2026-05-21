@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 editor.putBoolean("isLogin", true);
                 editor.apply();
 
-                Intent intent = new Intent(MainActivity.this, SkeletonPreferences.class);
+                Intent intent = new Intent(MainActivity.this, ListGame.class);
                 startActivity(intent);
                 finish();
 
