@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#000108"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white">
@@ -11,10 +12,10 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Selamat datang di Snack"
+        android:text="Lanjutkan setelah Masuk"
         android:textSize="26sp"
         android:textStyle="bold"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +26,7 @@
         android:id="@+id/tvSubtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Video tanpa batas, siaran langsung, dan lainnya menunggu Anda temukan. Bergabung sekarang!"
+        android:text="Buat profil,buat videomu sendiri"
         android:textSize="14sp"
         android:textColor="#9E9E9E"
         android:gravity="center"
@@ -55,6 +56,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintWidth_percent="0.85"/>
 
+    <ImageView
+        android:id="@+id/Google"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="46dp"
+        android:src="@drawable/Google1"
+        android:layout_width="100px"
+        android:layout_height="100px"/>
+
     <!-- Button Facebook -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnFacebook"
@@ -74,6 +84,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintWidth_percent="0.85"/>
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/btnGoogle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="75px"
+        android:layout_marginEnd="750px"
+        android:src="@drawable/Facebook_Logo_2023"
+        android:layout_width="70px"
+        android:layout_height="70px"/>
 
     <!-- Login alternatif -->
     <TextView
